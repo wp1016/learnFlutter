@@ -16,6 +16,9 @@ import './lifecycle/flutter_widget_lifecycle.dart'; // 页面声明周期
 import './lifecycle/flutter_app_lifecycle.dart'; // app生命周期
 import './photo/photo_page.dart'; // 拍照App
 
+import './animation/animation_pagee.dart'; //动画
+import './animation/hero_page.dart'; // hero动画
+
 void main() => runApp(DynamicThemeState());
 
 class DynamicThemeState extends StatefulWidget {
@@ -42,6 +45,11 @@ class _DynamicThemeStateState extends State<DynamicThemeState> {
         ),
         body: Column(
           children: <Widget>[
+            Container(
+                child: Image.network(
+                    'https://t8.baidu.com/it/u=1484500186,1503043093&fm=79&app=86&size=h300&n=0&g=4n&f=jpeg',
+                    width: 80,
+                    height: 80)),
             RaisedButton(
               onPressed: () {
                 setState(() {
@@ -68,6 +76,8 @@ class _DynamicThemeStateState extends State<DynamicThemeState> {
         'widgetLifecycle': (BuildContext context) => WidgetLifecycle(),
         'appLifecycle': (BuildContext context) => AppLifeCycle(),
         'photo': (BuildContext context) => PhotoPage(),
+        'animate': (BuildContext context) => AnimationPage(),
+        'hero': (BuildContext context) => HeroPage(),
       },
     );
   }
@@ -132,7 +142,9 @@ class _RouterNavigatorState extends State<RouterNavigator> {
           _item('如何打开第三方App', LaunchPage(), 'launch'),
           _item('页面生命周期', WidgetLifecycle(), 'widgetLifecycle'),
           _item('App生命周期', AppLifeCycle(), 'appLifecycle'),
-          _item('拍照App', PhotoPage(), 'photo')
+          _item('拍照App', PhotoPage(), 'photo'),
+          _item('动画', AnimationPage(), 'animate'),
+          _item('hero动画', HeroPage(), 'hero')
         ],
       ),
     );
