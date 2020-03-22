@@ -58,7 +58,7 @@ class _DateTypeState extends State<DateType> {
     // 集合初始化的方式
     List list = [1, 2, 3, '集合']; // 初始化时添加元素
     print(list);
-    List<int> list2 = [3, 2, 3];
+    // List<int> list2 = [3, 2, 3];
     // list2 = list;// 错误做法，类型不同
     List list3 = [];
     list3.add('list3'); //通过add方法添加元素

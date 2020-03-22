@@ -80,7 +80,6 @@ class _WidgetLifecycleState extends State<WidgetLifecycle> {
   @override
   void deactivate() {
     print('----deactivate-----');
-    // TODO: implement deactivate
     super.deactivate();
   }
 
@@ -89,7 +88,6 @@ class _WidgetLifecycleState extends State<WidgetLifecycle> {
   @override
   void dispose() {
     print('----dispose-----');
-    // TODO: implement dispose
     super.dispose();
   }
 }

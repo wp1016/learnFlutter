@@ -34,10 +34,10 @@ class Student extends Person {
     return 'name:$name,school:${this._school},city:$city,country:$country ${super.toString()}';
   }
 
-  String get school => _school;
-  set school(String value) {
-    _school = value;
-  }
+  // String get school => _school;
+  // set school(String value) {
+  //   _school = value;
+  // }
 
   // 静态方法
   static doPrint(String str) {

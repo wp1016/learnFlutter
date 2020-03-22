@@ -12,9 +12,9 @@ class FunctionLearn {
   // 私有方法：
   // 通过_开头命名的方法
   // 作用域为当前文件
-  _learn() {
-    print('私有方法');
-  }
+  // _learn() {
+  //   print('私有方法');
+  // }
 
   anonymousFunction() {
     var list = ['私有方法', '匿名方法'];

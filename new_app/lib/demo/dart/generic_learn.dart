@@ -1,4 +1,4 @@
-import 'package:new_app/dart/oop_learn.dart';
+import 'package:new_app/demo/dart/oop_learn.dart';
 
 class TestGeneric {
   void start() {
